@@ -2,6 +2,8 @@
 
 Docker image for KiCad automation scripts suitable for CI/CD
 
+The main objetive is to use it as a base for [KiCad automation in CI/CD environments](https://github.com/INTI-CMNB/kicad_ci_test).
+
 The images are uploaded to [Docker Hub](https://hub.docker.com/repository/docker/setsoft/kicad_auto).
 
 This image is based on [setsoft/kicad_debian](https://github.com/INTI-CMNB/kicad_debian) and adds some automation tools to it:
@@ -13,7 +15,7 @@ This image is based on [setsoft/kicad_debian](https://github.com/INTI-CMNB/kicad
 
 The available tags are:
 
-* **10.3-5.1.5** is KiCad 5.1.5 on Debian 10.3 with Kiplot 0.2.3, kicad-automation-scripts 1.1.6, KiBoM 1.6.2 and interactivehtmlbom 2.3
+* **10.3-5.1.5** (same as **latest**) is KiCad 5.1.5 on Debian 10.3 with Kiplot 0.2.3, kicad-automation-scripts 1.1.6, KiBoM 1.6.2 and interactivehtmlbom 2.3
 
 You can run it using a script like this:
 
@@ -34,4 +36,13 @@ docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
     --volume="/etc/shadow:/etc/shadow:ro" \
     setsoft/kicad_auto:10.3-5.1.5 /bin/bash -c "cd workdir/$SUBDIR; kiplot"
 ```
+
+To create the docker image run the [build.sh](https://github.com/INTI-CMNB/kicad_auto/blob/master/build.sh) script.
+This script will download the latest KiPlot and needed tools using the [download.sh](https://github.com/INTI-CMNB/kicad_auto/blob/master/download.sh) script.
+
+The [run.sh](https://github.com/INTI-CMNB/kicad_auto/blob/master/download.sh) script is an example of how to run KiPlot using this image locally.
+You must edit the file to define the place where your KiCad project is located.
+The **WORKDIR** variable indicates the directory where your project and libraries are located.
+The **SUBDIR** variable is the subdir inside **WORKDIR** that contains the schematic and PCB files.
+
 
