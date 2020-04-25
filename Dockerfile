@@ -4,6 +4,7 @@ LABEL Description="KiCad with KiPlot and other automation scripts"
 
 COPY *.deb /
 RUN     apt-get update  && \
+	apt-get -y install --no-install-recommends make && \
 	apt -y install --no-install-recommends ./*.deb && \
 	apt-get -y autoremove && \
 	rm /*.deb && \

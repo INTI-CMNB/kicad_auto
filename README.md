@@ -15,7 +15,7 @@ This image is based on [setsoft/kicad_debian](https://github.com/INTI-CMNB/kicad
 
 The available tags are:
 
-* **10.3-5.1.5** (same as **latest**) is KiCad 5.1.5 on Debian 10.3 with Kiplot 0.2.3, kicad-automation-scripts 1.1.6, KiBoM 1.6.2 and interactivehtmlbom 2.3
+* **10.3-5.1.5** (same as **latest**) is KiCad 5.1.5 on Debian 10.3 with Kiplot 0.2.3, kicad-automation-scripts 1.1.6, KiBoM 1.6.3 and interactivehtmlbom 2.3.1
 
 You can run it using a script like this:
 
