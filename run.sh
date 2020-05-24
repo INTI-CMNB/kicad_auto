@@ -12,4 +12,4 @@ docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
     --volume="/home/$USER/.cache/kicad:/home/$USER/.cache/kicad:rw" \
     --volume="/etc/passwd:/etc/passwd:ro" \
     --volume="/etc/shadow:/etc/shadow:ro" \
-    setsoft/kicad_auto:10.3-5.1.5 /bin/bash -c "cd workdir/$SUBDIR; kiplot"
+    setsoft/kicad_auto:latest /bin/bash -c "cd workdir/$SUBDIR; kiplot"
