@@ -32,6 +32,7 @@ RUN     apt-get update  && \
 
 COPY kibot*.deb /
 RUN     apt-get update  && \
+	apt-get -y install --no-install-recommends imagemagick librsvg2-bin && \
 	apt -y install ./kibot*.deb && \
 	apt-get -y autoremove && \
 	rm /*.deb && \
