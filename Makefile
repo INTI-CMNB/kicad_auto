@@ -1,6 +1,7 @@
 #!/usr/bin/make
 tagname = 10.4-5.1.6
 tagname_rc = 10.4-5.1.6rc
+tagname_ng = bullseye-5.99-20200922
 docker_user = setsoft
 docker_img = setsoft/kicad_auto
 
@@ -18,6 +19,10 @@ build: download_packages
 build_rc:
 	docker build -f Dockerfile -t $(docker_img):$(tagname_rc) .
 
+build_ng:
+	docker build -f Dockerfile-nightly -t $(docker_img):$(tagname_ng) .
+	docker build -f Dockerfile-nightly -t $(docker_img):nightly .
+
 upload_image:
 	#docker login --username=$(docker_user)
 	docker push $(docker_img):$(tagname)
@@ -26,9 +31,15 @@ upload_image:
 upload_image_rc:
 	docker push $(docker_img):$(tagname_rc)
 
+upload_image_ng:
+	docker push $(docker_img):$(tagname_ng)
+	docker push $(docker_img):nightly
+
 release: build upload_image
 
 release_rc: build_rc upload_image_rc
+
+release_ng: build_ng upload_image_ng
 
 # If docker is not installed in the host system
 install_docker:
