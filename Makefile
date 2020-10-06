@@ -1,7 +1,7 @@
 #!/usr/bin/make
 tagname = 10.4-5.1.6
 tagname_rc = 10.4-5.1.6rc
-tagname_ng = bullseye-5.99-20200922
+tagname_ng = bullseye-5.99-20201002
 docker_user = setsoft
 docker_img = setsoft/kicad_auto
 
@@ -9,10 +9,7 @@ CWD := $(abspath $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 USER_ID=$(shell id -u)
 GROUP_ID=$(shell id -g)
 
-download_packages:
-	./download.sh
-
-build: download_packages
+build:
 	docker build -f Dockerfile -t $(docker_img):$(tagname) .
 	docker build -f Dockerfile -t $(docker_img):latest .
 
