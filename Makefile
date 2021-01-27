@@ -10,7 +10,7 @@ USER_ID=$(shell id -u)
 GROUP_ID=$(shell id -g)
 
 build:
-	docker build -f Dockerfile -t $(docker_img):$(tagname) .
+	docker build --no-cache -f Dockerfile -t $(docker_img):$(tagname) .
 	docker build -f Dockerfile -t $(docker_img):latest .
 
 build_rc:
