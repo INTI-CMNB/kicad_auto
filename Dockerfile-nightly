@@ -4,7 +4,7 @@ LABEL Description="KiCad with KiBot and other automation scripts"
 
 RUN     sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list  && \
 	apt-get update  && \
-	apt-get -y install make wget curl rar && \
+	apt-get -y install make wget curl rar bzip2 && \
 	curl -s https://api.github.com/repos/INTI-CMNB/KiAuto/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
 	curl -s https://api.github.com/repos/INTI-CMNB/KiBoM/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
 	curl -s https://api.github.com/repos/INTI-CMNB/InteractiveHtmlBom/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
