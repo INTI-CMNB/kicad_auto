@@ -5,6 +5,7 @@ LABEL Description="KiCad with KiBot and other automation scripts"
 RUN     sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list  && \
 	apt-get update  && \
 	apt-get -y install make wget curl rar bzip2 librsvg2-bin && \
+	apt-get -y install --no-install-recommends imagemagick && \
 	wget https://launchpad.net/~kicad/+archive/ubuntu/kicad-5.1-releases/+files/kicad_5.1.9-202012230806+73d0e3b20d~88~ubuntu20.10.1_amd64.deb && \
 	apt-get -y install liboce-foundation11 liboce-modeling11 liboce-ocaf-lite11 liboce-ocaf11 liboce-visualization11 libgl2ps1.4 && \
 	dpkg -i /kicad_5.1.*.deb && \
