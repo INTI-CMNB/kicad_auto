@@ -1,7 +1,7 @@
 #!/usr/bin/make
 tagname = 10.4-5.1.6
 tagname_rc = 10.4-5.1.6rc
-tagname_ng = bullseye-5.99-20201002
+tagname_ng = bullseye-5.99-20210427
 docker_user = setsoft
 docker_img = setsoft/kicad_auto
 
