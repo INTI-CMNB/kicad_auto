@@ -41,9 +41,9 @@ docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
 ```
 
 To create the docker image run the [build.sh](https://github.com/INTI-CMNB/kicad_auto/blob/master/build.sh) script.
-This script will download the latest KiPlot and needed tools using the [download.sh](https://github.com/INTI-CMNB/kicad_auto/blob/master/download.sh) script.
+This script will download the latest KiPlot and needed tools.
 
-The [run.sh](https://github.com/INTI-CMNB/kicad_auto/blob/master/download.sh) script is an example of how to run KiPlot using this image locally.
+The [run.sh](https://github.com/INTI-CMNB/kicad_auto/blob/master/run.sh) script is an example of how to run KiPlot using this image locally.
 You must edit the file to define the place where your KiCad project is located.
 The **WORKDIR** variable indicates the directory where your project and libraries are located.
 The **SUBDIR** variable is the subdir inside **WORKDIR** that contains the schematic and PCB files.
