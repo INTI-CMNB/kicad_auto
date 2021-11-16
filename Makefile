@@ -1,5 +1,5 @@
 #!/usr/bin/make
-tagname = 10.4-5.1.6
+tagname = 10.4-5.1.9
 tagname_rc = 10.4-5.1.6rc
 tagname_ng = bullseye-5.99-20210427
 docker_user = setsoft
@@ -60,5 +60,5 @@ docker_shell:
 	--volume="/home/$(USER):/home/$(USER):rw" \
 	$(docker_img):$(tagname) /bin/bash
 
-.PHONY: download_packages build_release upload_image upload_image_rc install_docker clean build build_rc release release_rc
+.PHONY: build_release upload_image upload_image_rc install_docker clean build build_rc release release_rc
 
