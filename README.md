@@ -18,7 +18,7 @@ The available tags are:
 
 * **10.3-5.1.5** is KiCad 5.1.5 on Debian 10.3 with Kiplot 0.2.4, kicad-automation-scripts 1.3.1, KiBoM 1.6.3 and interactivehtmlbom 2.3.1
 * **10.4-5.1.6** is KiCad 5.1.6 on Debian 10.4 with KiBot 0.7.0, kicad-automation-scripts 1.4.2, KiBoM 1.8.0, interactivehtmlbom 2.3.3 and PcbDraw 0.6.0-2
-* **10.4-5.1.9** (same as **latest**) is KiCad 5.1.9 on Debian 10.4 with KiBot 0.11.0, kicad-automation-scripts 1.5.10, KiBoM 1.8.0, interactivehtmlbom 2.3.4 and PcbDraw 0.6.0-2
+* **10.4-5.1.9** (same as **latest**) is KiCad 5.1.9 on Debian 10.4 with KiBot 0.11.0, KiAuto 1.5.12, KiBoM 1.8.0, interactivehtmlbom 2.3.4 and PcbDraw 0.6.0-2
 * **bullseye-5.99-20200922** (same as **nightly**) is KiCad 5.99 (20200922) on Debian bullseye with KiBot 0.7.0, kicad-automation-scripts 1.4.2, KiBoM 1.8.0, interactivehtmlbom 2.3.3 and PcbDraw 0.6.0-2
 
 You can run it using a script like this:
