@@ -1,9 +1,9 @@
-name: Docker Hub upload (normal)
+name: Docker Hub upload (nightly)
 
 on:
   push:
     tags:
-      - b*
+      - n*
 
 jobs:
   push_to_registry:
@@ -29,7 +29,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
       with:
-        # context: tools/dev_image
+        context: nightly
         push: true
-        tags: setsoft/kicad_auto:latest
+        tags: setsoft/kicad_auto:nightly
         labels: ${{ steps.meta.outputs.labels }}
