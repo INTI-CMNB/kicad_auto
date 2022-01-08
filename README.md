@@ -4,7 +4,7 @@ Docker image for KiCad automation scripts suitable for CI/CD
 
 The main objetive is to use it as a base for [KiCad automation in CI/CD environments](https://github.com/INTI-CMNB/kicad_ci_test).
 
-The images are uploaded to [Docker Hub](https://hub.docker.com/repository/docker/setsoft/kicad_auto).
+The images are uploaded to [Docker Hub](https://hub.docker.com/r/setsoft/kicad_auto).
 
 This image is based on [setsoft/kicad_debian](https://github.com/INTI-CMNB/kicad_debian) and adds some automation tools to it:
 
