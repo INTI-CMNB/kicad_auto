@@ -35,3 +35,7 @@ jobs:
         push: true
         tags: setsoft/kicad_auto:ki6
         labels: ${{ steps.meta.outputs.labels }}
+
+    - name: Trigger KiCad-Auto-Test image build
+      run: |
+        curl -X POST -u "${{secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.v3+json" -H "Content-Type: application/json" https://api.github.com/repos/INTI-CMNB/kicad_auto_test/dispatches --data '{"event_type": "build_k6"}'
