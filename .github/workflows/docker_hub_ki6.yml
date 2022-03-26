@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - ki6_*
+  repository_dispatch:
+    types: [build_k6]
 
 jobs:
   push_to_registry:

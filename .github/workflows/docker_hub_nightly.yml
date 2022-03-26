@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - n*
+  repository_dispatch:
+    types: [build_nightly]
 
 jobs:
   push_to_registry:
