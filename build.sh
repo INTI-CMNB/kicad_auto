@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -f Dockerfile -t setsoft/kicad_auto:10.4-5.1.6 .
+docker build -f Dockerfile -t setsoft/kicad_auto:11.3-5.1.9 .
