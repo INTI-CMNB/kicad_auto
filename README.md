@@ -8,11 +8,14 @@ The images are uploaded to [Docker Hub](https://hub.docker.com/r/setsoft/kicad_a
 
 This image is based on [setsoft/kicad_debian](https://github.com/INTI-CMNB/kicad_debian) and adds some automation tools to it:
 
-* [Kiplot](https://github.com/INTI-CMNB/kiplot) generate gerbers, drill and position files
-* [kicad-automation-scripts](https://github.com/INTI-CMNB/kicad-automation-scripts) runs DRC/ERC, prints schematics and PCB
+* [KiBot](https://github.com/INTI-CMNB/KiBot) generate gerbers, drill, position files, etc.
+* [KiAuto](https://github.com/INTI-CMNB/KiAuto) runs DRC/ERC, prints schematics, PCB, etc.
 * [KiBoM](https://github.com/INTI-CMNB/KiBoM) generates HTML and CSV BoMs
 * [InteractiveHtmlBom](https://github.com/INTI-CMNB/InteractiveHtmlBom) generates interactive HTML BoMs
 * [PcbDraw](https://github.com/INTI-CMNB/PcbDraw) generates 2D renders of the PCB
+* [KiCost](https://github.com/hildogjr/KiCost) generates BoMs with prices
+* [KiCad Git filters](https://github.com/INTI-CMNB/kicad-git-filters) helps to reduce unneeded commits for KiCad files when using git
+* [KiCad PCB diff](https://github.com/INTI-CMNB/kicad_pcb-diff) a tool to see differences between PCBs, can be used as git plugin
 
 The available tags are:
 
