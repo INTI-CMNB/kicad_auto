@@ -25,7 +25,8 @@ The available tags are:
 * **11.4-5.1.9** (same as **latest**) is KiCad 5.1.9 on Debian 11.4 with KiBot 1.2.0, KiAuto 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in) and PcbDraw 0.9.0-3
 * **bullseye-6.0.0-RC1-20211204** (same as **nightly**) is KiCad 6.0.0 RC1 (20211204) on Debian bullseye with KiBot 0.11.0, kicad-automation-scripts 1.6.5, KiBoM 1.8.0, interactivehtmlbom 2.4.1, KiCost 1.1.5 (+Digi-Key plug-in) and PcbDraw 0.9.0-1
 * **ki6.0.0_Ubuntu21.10** KiCad 6.0.0 (final release) on Ubuntu Impish with KiBot 0.11.0, kicad-automation-scripts 1.6.5, KiBoM 1.8.0, interactivehtmlbom 2.4.1, KiCost 1.1.5 (+Digi-Key plug-in) and PcbDraw 0.9.0-1
-* **ki6.0.6_Debian** (same as **ki6**) KiCad 6.0.6 (6.0.7 libs) on Debian 11.4 with KiBot 1.2.0, kicad-automation-scripts 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in) and PcbDraw 0.9.0-3
+* **ki6.0.6_Debian** KiCad 6.0.6 (6.0.7 libs) on Debian 11.4 with KiBot 1.2.0, kicad-automation-scripts 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in) and PcbDraw 0.9.0-3
+* **ki6.0.7_Debian** (same as **ki6**) KiCad 6.0.7 on Debian 11.4 with KiBot 1.2.0, kicad-automation-scripts 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in) and PcbDraw 0.9.0-3
 
 You can run it using a script like this:
 
