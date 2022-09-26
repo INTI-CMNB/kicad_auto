@@ -39,11 +39,13 @@ jobs:
         images: |
           setsoft/kicad_auto
           ghcr.io/${{ github.repository }}
+        tags: |
+          type=raw,manjaro_k6
 
     - name: Build and push Docker images
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
       with:
         context: manjaro
         push: true
-        tags: setsoft/kicad_auto:manjaro_k6
+        tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
