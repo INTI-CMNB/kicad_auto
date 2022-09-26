@@ -31,7 +31,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
       with:
-        # context: tools/dev_image
+        context: manjaro
         push: true
         tags: setsoft/kicad_auto:manjaro_k6
         labels: ${{ steps.meta.outputs.labels }}
