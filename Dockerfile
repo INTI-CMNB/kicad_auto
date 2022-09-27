@@ -1,4 +1,4 @@
-FROM setsoft/kicad_debian:latest
+FROM ghcr.io/inti-cmnb/kicad5_debian:latest
 MAINTAINER Salvador E. Tropea <set@ieee.org>
 LABEL Description="KiCad with KiBot and other automation scripts"
 
