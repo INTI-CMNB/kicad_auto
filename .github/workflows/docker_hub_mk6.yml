@@ -39,6 +39,7 @@ jobs:
         images: |
           setsoft/kicad_auto
           ghcr.io/${{ github.repository }}
+          ghcr.io/inti-cmnb/kicad6_auto
         tags: |
           type=raw,manjaro_k6
 
@@ -47,5 +48,8 @@ jobs:
       with:
         context: manjaro
         push: true
-        tags: ${{ steps.meta.outputs.tags }}
+        tags: |
+          setsoft/kicad_auto:manjaro_k6
+          ghcr.io/inti-cmnb/kicad_auto:manjaro_k6
+          ghcr.io/inti-cmnb/kicad6_auto:manjaro
         labels: ${{ steps.meta.outputs.labels }}

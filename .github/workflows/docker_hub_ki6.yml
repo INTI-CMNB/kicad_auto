@@ -39,6 +39,7 @@ jobs:
         images: |
           setsoft/kicad_auto
           ghcr.io/${{ github.repository }}
+          ghcr.io/inti-cmnb/kicad6_auto
         tags: |
           type=raw,ki6
 
@@ -47,7 +48,10 @@ jobs:
       with:
         context: ki6
         push: true
-        tags: ${{ steps.meta.outputs.tags }}
+        tags: |
+          setsoft/kicad_auto:ki6
+          ghcr.io/inti-cmnb/kicad_auto:ki6
+          ghcr.io/inti-cmnb/kicad6_auto:latest
         labels: ${{ steps.meta.outputs.labels }}
 
     - name: Trigger KiCad-Auto-Test image build

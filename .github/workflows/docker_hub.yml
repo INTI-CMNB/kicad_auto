@@ -39,6 +39,7 @@ jobs:
         images: |
           setsoft/kicad_auto
           ghcr.io/${{ github.repository }}
+          ghcr.io/inti-cmnb/kicad5_auto
         tags: |
           type=raw,latest
 
