@@ -4,7 +4,10 @@ Docker image for KiCad automation scripts suitable for CI/CD
 
 The main objetive is to use it as a base for [KiCad automation in CI/CD environments](https://github.com/INTI-CMNB/kicad_ci_test).
 
-The images are uploaded to [Docker Hub](https://hub.docker.com/r/setsoft/kicad_auto).
+The images are uploaded to [Docker Hub](https://hub.docker.com/r/setsoft/kicad_auto) and GitHub:
+[Compatibility names](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad_auto),
+[KiCad 5](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad5_auto) and
+[KiCad 6](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad6_auto).
 
 This image is based on [setsoft/kicad_debian](https://github.com/INTI-CMNB/kicad_debian) and adds some automation tools to it:
 
@@ -22,11 +25,12 @@ The available tags are:
 * **10.3-5.1.5** is KiCad 5.1.5 on Debian 10.3 with Kiplot 0.2.4, kicad-automation-scripts 1.3.1, KiBoM 1.6.3 and interactivehtmlbom 2.3.1
 * **10.4-5.1.6** is KiCad 5.1.6 on Debian 10.4 with KiBot 0.7.0, kicad-automation-scripts 1.4.2, KiBoM 1.8.0, interactivehtmlbom 2.3.3 and PcbDraw 0.6.0-2
 * **10.4-5.1.9** is KiCad 5.1.9 on Debian 10.4 with KiBot 1.2.0, KiAuto 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in) and PcbDraw 0.9.0-3
-* **11.4-5.1.9** (same as **latest**) is KiCad 5.1.9 on Debian 11.4 with KiBot 1.3.0, KiAuto 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in), PcbDraw 0.9.0-3 and KiDiff 2.2.0
+* **11.4-5.1.9** is KiCad 5.1.9 on Debian 11.4 with KiBot 1.3.0, KiAuto 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in), PcbDraw 0.9.0-3 and KiDiff 2.2.0
+* **11.5-5.1.9** (same as **latest**) is KiCad 5.1.9 on Debian 11.5 with KiBot 1.3.0, KiAuto 2.0.6, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.12 (+Digi-Key plug-in), PcbDraw 0.9.0-4 and KiDiff 2.4.2
 * **bullseye-6.0.0-RC1-20211204** (same as **nightly**) is KiCad 6.0.0 RC1 (20211204) on Debian bullseye with KiBot 0.11.0, kicad-automation-scripts 1.6.5, KiBoM 1.8.0, interactivehtmlbom 2.4.1, KiCost 1.1.5 (+Digi-Key plug-in) and PcbDraw 0.9.0-1
 * **ki6.0.0_Ubuntu21.10** KiCad 6.0.0 (final release) on Ubuntu Impish with KiBot 0.11.0, kicad-automation-scripts 1.6.5, KiBoM 1.8.0, interactivehtmlbom 2.4.1, KiCost 1.1.5 (+Digi-Key plug-in) and PcbDraw 0.9.0-1
 * **ki6.0.6_Debian** KiCad 6.0.6 (6.0.7 libs) on Debian 11.4 with KiBot 1.2.0, kicad-automation-scripts 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in) and PcbDraw 0.9.0-3
-* **ki6.0.7_Debian** (same as **ki6**) KiCad 6.0.7 on Debian 11.4 with KiBot 1.3.0, kicad-automation-scripts 1.6.15, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.10 (+Digi-Key plug-in), PcbDraw 0.9.0-3 and KiDiff 2.2.0
+* **ki6.0.7_Debian** (same as **ki6**) KiCad 6.0.7 on Debian 11.5 with KiBot 1.3.0, kicad-automation-scripts 2.0.6, KiBoM 1.8.0, interactivehtmlbom 2.5.0, KiCost 1.1.12 (+Digi-Key plug-in), PcbDraw 0.9.0-4 and KiDiff 2.4.2
 
 You can run it using a script like this:
 
