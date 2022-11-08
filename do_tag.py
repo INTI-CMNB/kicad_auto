@@ -6,9 +6,9 @@ import subprocess
 
 CUR_VERSION = '1.4.0'
 CUR_K5 = '5.1.9'
-CUR_K6 = '6.0.8'
+CUR_K6 = '6.0.9'
 CUR_DEB = '11.5'
-ITERA = '4'
+ITERA = '5'
 
 TAGS = {'latest': CUR_DEB+'-'+CUR_K5, 'ki6': 'ki'+CUR_K6+'_Debian'}
 NEW_TAGS = {'latest': '-'+ITERA+'_k'+CUR_K5+'_d'+CUR_DEB, 'ki6': '-'+ITERA+'_k'+CUR_K6+'_d'+CUR_DEB}
