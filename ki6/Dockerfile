@@ -27,6 +27,6 @@ RUN     sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list  && \
 	rm -rf /var/lib/apt/lists/*
 # Needed for GitHub seen on git 2.39.1
 RUN     echo "[safe]" >> /etc/gitconfig && \
-	echo "	directory = *" >> /etc/gitconfig
-	echo '[protocol "file"]' >> /etc/gitconfig
+	echo "	directory = *" >> /etc/gitconfig && \
+	echo '[protocol "file"]' >> /etc/gitconfig && \
 	echo '	allow = always' >> /etc/gitconfig
