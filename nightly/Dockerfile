@@ -1,4 +1,4 @@
-FROM setsoft/kicad_debian:nightly
+FROM ghcr.io/inti-cmnb/kicad_debian:nightly
 MAINTAINER Salvador E. Tropea <set@ieee.org>
 LABEL Description="KiCad with KiBot and other automation scripts"
 
