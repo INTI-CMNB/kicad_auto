@@ -8,18 +8,17 @@ RUN     sed -i -e's/ main/ main contrib non-free/g' /etc/apt/sources.list  && \
 	apt-get -y install --no-install-recommends -t bullseye-backports git && \
 	apt-get -y install make wget curl rar bzip2 librsvg2-bin ghostscript && \
 	apt-get -y install --no-install-recommends imagemagick python3-qrcodegen poppler-utils && \
-	curl -s https://api.github.com/repos/INTI-CMNB/KiAuto/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/INTI-CMNB/KiBoM/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/INTI-CMNB/InteractiveHtmlBom/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/INTI-CMNB/PcbDraw/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/hildogjr/KiCost/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/INTI-CMNB/KiBot/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/set-soft/kicost-digikey-api-v3/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/INTI-CMNB/kicad-git-filters/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/INTI-CMNB/kidiff/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/set-soft/pcbnewTransition/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	curl -s https://api.github.com/repos/INTI-CMNB/KiKit/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -i - && \
-	rm kikit-doc* && \
+	dl_deb.py INTI-CMNB/KiAuto && \
+	dl_deb.py INTI-CMNB/KiBoM && \
+	dl_deb.py INTI-CMNB/InteractiveHtmlBom && \
+	dl_deb.py INTI-CMNB/PcbDraw && \
+	dl_deb.py hildogjr/KiCost && \
+	dl_deb.py INTI-CMNB/KiBot && \
+	dl_deb.py set-soft/kicost-digikey-api-v3 && \
+	dl_deb.py INTI-CMNB/kicad-git-filters && \
+	dl_deb.py INTI-CMNB/kidiff && \
+	dl_deb.py set-soft/pcbnewTransition && \
+	dl_deb.py INTI-CMNB/KiKit --skip kikit-doc && \
 	apt -y install --no-install-recommends ./*.deb && \
 	sed -i 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<!-- <policy domain="coder" rights="none" pattern="PDF" \/> -->/g' /etc/ImageMagick-6/policy.xml && \
 	sed -i 's/<policy domain="coder" rights="none" pattern="PS" \/>/<!-- <policy domain="coder" rights="none" pattern="PS" \/> -->/g' /etc/ImageMagick-6/policy.xml && \
