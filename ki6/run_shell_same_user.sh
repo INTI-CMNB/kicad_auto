@@ -10,4 +10,4 @@ docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
     --volume="/etc/passwd:/etc/passwd:ro" \
     --volume="/etc/shadow:/etc/shadow:ro" \
     --volume="/home/$USER:/home/$USER:rw" \
-    setsoft/kicad_auto:ki6 /bin/bash
+    ghcr.io/inti-cmnb/kicad6_auto:latest /bin/bash

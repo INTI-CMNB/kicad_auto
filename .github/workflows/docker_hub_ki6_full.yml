@@ -1,11 +1,11 @@
-name: KiBot (KiCad 6) Docker image
+name: KiBot (KiCad 6 Full) Docker image
 
 on:
   push:
     tags:
-      - ki6_*
+      - ki6f_*
   repository_dispatch:
-    types: [build_k6]
+    types: [build_k6f]
 
 jobs:
   push_to_registry:
@@ -34,5 +34,5 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        cd ki6
+        cd ki6_full
         ./build.sh
