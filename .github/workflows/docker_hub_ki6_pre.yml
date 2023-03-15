@@ -1,0 +1,42 @@
+name: KiBot (KiCad 6 deps) Docker image
+
+on:
+  push:
+    tags:
+      - ki6p_*
+  repository_dispatch:
+    types: [build_k6p]
+
+jobs:
+  push_to_registry:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v3
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Log in to the Container registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build and push Docker image
+      run: |
+        cd ki6_pre
+        ./build.sh
+
+    - name: Trigger KiCad-Auto image build
+      run: |
+        curl -X POST -u "${{secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.v3+json" -H "Content-Type: application/json" https://api.github.com/repos/INTI-CMNB/kicad_auto/dispatches --data '{"event_type": "build_k6"}'
