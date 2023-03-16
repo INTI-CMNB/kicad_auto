@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 docker build -f Dockerfile -t ghcr.io/inti-cmnb/kicad5_auto:latest_deps .
 TG1=`docker run --rm ghcr.io/inti-cmnb/kicad5_auto:latest_deps kicad_version.py`
 TG2=d`docker run --rm ghcr.io/inti-cmnb/kicad5_auto:latest_deps cat /etc/debian_version | tr -d '\n'`
