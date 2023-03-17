@@ -1,4 +1,3 @@
-docker pull setsoft/kicad_auto:latest
-docker pull setsoft/kicad_auto:ki6
-docker pull setsoft/kicad_auto_test:latest
-docker pull setsoft/kicad_auto_test:ki6
+docker pull ghcr.io/inti-cmnb/kicad_auto:ki5
+docker pull ghcr.io/inti-cmnb/kicad_auto:ki6
+docker pull ghcr.io/inti-cmnb/kicad_auto:ki7

@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run --rm -it ghcr.io/inti-cmnb/kicad7_auto:latest /bin/bash
+docker run --rm -it ghcr.io/inti-cmnb/kicad_auto:ki7 /bin/bash
