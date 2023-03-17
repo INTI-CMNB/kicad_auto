@@ -47,7 +47,7 @@ for PKG in PKGS:
             print(f"Deleting {v['html_url']} UNTAGGED {days_ago} days ago")
             erase(v["id"])
             deleted += 1
-        elif len(tags) == 1 and tags[0].startswith('dev_'):
+        elif len(tags) == 1 and tags[0].startswith('dev_') and len(tags[0]) > 6:
             # Is dev_* and isn't tagged as the last dev
             print(f"Deleting {v['html_url']} {tags[0]} {days_ago} days ago")
             erase(v["id"])
