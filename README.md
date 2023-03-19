@@ -21,6 +21,11 @@ This image is based on [kicad_debian](https://github.com/INTI-CMNB/kicad_debian)
 * [KiCad PCB diff](https://github.com/INTI-CMNB/kicad_pcb-diff) a tool to see differences between PCBs, can be used as git plugin
 * [KiKit](https://github.com/yaqwsx/KiKit) stencil and panelization tools
 
+The relation between the packages that contains the images is as depicted in the following image:
+
+![Layers](Layers.png)
+
+
 Here are some of the available images:
 
 ## KiCad 5
