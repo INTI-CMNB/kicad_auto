@@ -13,3 +13,6 @@ RUN     apt-get update  && \
 	apt-get -y autoremove && \
 	rm /*.deb && \
 	rm -rf /var/lib/apt/lists/* /var/cache/debconf/templates.dat-old /var/lib/dpkg/status-old
+
+# Fix for the .deb downloader, should be removed in the next OS iteration
+COPY dl_deb.py /usr/bin/
