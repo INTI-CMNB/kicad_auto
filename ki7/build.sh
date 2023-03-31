@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 docker build -f Dockerfile -t ghcr.io/inti-cmnb/kicad7_auto:latest .
-IT=2
+IT=3
 TG1=`docker run --rm ghcr.io/inti-cmnb/kicad7_auto:latest kibot --version | sed 's/.* \([0-9]\+\.[0-9]\+\.[0-9]\+\) .*/\1/' | tr -d '\n'`
 TG2=k`docker run --rm ghcr.io/inti-cmnb/kicad7_auto:latest kicad_version.py`
 TG3=d`docker run --rm ghcr.io/inti-cmnb/kicad7_auto:latest cat /etc/debian_version | tr -d '\n'`
