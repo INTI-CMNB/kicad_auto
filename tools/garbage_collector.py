@@ -15,7 +15,8 @@ HEADER = {'Accept': 'application/vnd.github+json',
 def erase(name):
     url = f'https://api.github.com/orgs/{ORG}/packages/container/{PKG}/versions/{name}'
     r = requests.delete(url, timeout=20, allow_redirects=True, headers=HEADER)
-    assert r.status_code == 204, r.status_code
+    if r.status_code != 204:
+        print(f'Error: {r.status_code} ****'
 
 
 deleted = 0
