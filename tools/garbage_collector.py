@@ -16,7 +16,7 @@ def erase(name):
     url = f'https://api.github.com/orgs/{ORG}/packages/container/{PKG}/versions/{name}'
     r = requests.delete(url, timeout=20, allow_redirects=True, headers=HEADER)
     if r.status_code != 204:
-        print(f'Error: {r.status_code} ****'
+        print(f'Error: {r.status_code} ****')
 
 
 deleted = 0
