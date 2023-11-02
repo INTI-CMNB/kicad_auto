@@ -7,7 +7,7 @@ The main objetive is to use it as a base for [KiCad automation in CI/CD environm
 The images are uploaded to [Docker Hub](https://hub.docker.com/r/setsoft/kicad_auto) and GitHub:
 [KiCad 5](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad5_auto),
 [KiCad 6](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad6_auto),
-[KiCad 7](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad6_auto) and
+[KiCad 7](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad7_auto) and
 [Old compatibility names](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad_auto),
 
 This image is based on [kicad_debian](https://github.com/INTI-CMNB/kicad_debian) and adds some automation tools to it:
