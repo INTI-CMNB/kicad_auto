@@ -19,3 +19,12 @@ RUN     apt-get update  && \
 	apt-get -y autoremove && \
 	rm /*.deb && \
 	rm -rf /var/lib/apt/lists/* /var/cache/debconf/templates.dat-old /var/lib/dpkg/status-old
+
+ARG iteration
+ENV KIBOT_ITERATION=$iteration
+
+RUN     kibot --version | sed 's/.* \([0-9]\+\.[0-9]\+\.[0-9]\+\) .*/\1/' | tr -d '\n' > /etc/kiauto_tag && \
+	echo -n -${KIBOT_ITERATION}_k >> /etc/kiauto_tag && \
+	kicad_version.py >> /etc/kiauto_tag && \
+	echo -n _d >> /etc/kiauto_tag && \
+	cat /etc/debian_version | tr -d '\n' >> /etc/kiauto_tag

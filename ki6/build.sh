@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
-docker build -f Dockerfile -t ghcr.io/inti-cmnb/kicad6_auto:latest .
-IT=1
+. ../iteration.sh
+docker build -f Dockerfile --build-arg iteration=${IT} -t ghcr.io/inti-cmnb/kicad6_auto:latest .
 TG1=`docker run --rm ghcr.io/inti-cmnb/kicad6_auto:latest kibot --version | sed 's/.* \([0-9]\+\.[0-9]\+\.[0-9]\+\) .*/\1/' | tr -d '\n'`
 TG2=k`docker run --rm ghcr.io/inti-cmnb/kicad6_auto:latest kicad_version.py`
 TG3=d`docker run --rm ghcr.io/inti-cmnb/kicad6_auto:latest cat /etc/debian_version | tr -d '\n'`
