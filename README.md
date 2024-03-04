@@ -18,7 +18,7 @@ This image is based on [kicad_debian](https://github.com/INTI-CMNB/kicad_debian)
 * [InteractiveHtmlBom](https://github.com/INTI-CMNB/InteractiveHtmlBom) generates interactive HTML BoMs
 * [KiCost](https://github.com/hildogjr/KiCost) generates BoMs with prices
 * [KiCad Git filters](https://github.com/INTI-CMNB/kicad-git-filters) helps to reduce unneeded commits for KiCad files when using git
-* [KiCad PCB diff](https://github.com/INTI-CMNB/kicad_pcb-diff) a tool to see differences between PCBs, can be used as git plugin
+* [KiDiff](https://github.com/INTI-CMNB/KiDiff) a tool to see differences between PCBs and schematics, can be used as git plugin
 * [KiKit](https://github.com/yaqwsx/KiKit) stencil and panelization tools
 
 The relation between the packages that contains the images is as depicted in the following image:
