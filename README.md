@@ -65,7 +65,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.1       | 1.6.1  | 7.0.1.1 |  11.6  | 2.2.1  | 1.8.0-3 | 2.5.0-3  | 1.1.15 |  0.1.2  |  2.4.5 | 1.3.0-5 |
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.2       | 1.6.2  | 7.0.5.1 |  11.6  | 2.2.6  | 1.9.0   | 2.6.0    | 1.1.17 |  0.1.2  |  2.4.7 | 1.3.0-7 |
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.3       | 1.6.3  | 7.0.10  |  12.1  | 2.2.8  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |  2.5.3 | 1.4.0   |
-| ghcr.io/inti-cmnb/kicad7_auto:1.6.4       | 1.6.4  | 7.0.10  |  12.1  | 2.2.8  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |  2.5.3 | 1.4.0-2 |
+| ghcr.io/inti-cmnb/kicad7_auto:1.6.4       | 1.6.4  | 7.0.11  |  12.1  | 2.2.8  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.2  |  2.5.3 | 1.5.0   |
 
 You can run it using a script like this:
 
