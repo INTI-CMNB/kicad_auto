@@ -7,7 +7,8 @@ The main objetive is to use it as a base for [KiCad automation in CI/CD environm
 The images are uploaded to [Docker Hub](https://hub.docker.com/r/setsoft/kicad_auto) and GitHub:
 [KiCad 5](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad5_auto),
 [KiCad 6](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad6_auto),
-[KiCad 7](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad7_auto) and
+[KiCad 7](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad7_auto),
+[KiCad 8](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad8_auto) and
 [Old compatibility names](https://github.com/INTI-CMNB/kicad_auto/pkgs/container/kicad_auto),
 
 This image is based on [kicad_debian](https://github.com/INTI-CMNB/kicad_debian) and adds some automation tools to it:
@@ -42,7 +43,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad5_auto:1.6.1       | 1.6.1  | 5.1.9 |  11.6  | 2.2.1  | 1.8.0-3 | 2.5.0-3  | 1.1.15 |  0.1.2  |   --    |  2.4.5 |
 | ghcr.io/inti-cmnb/kicad5_auto:1.6.2       | 1.6.2  | 5.1.9 |  11.6  | 2.2.6  | 1.9.0   | 2.6.0    | 1.1.17 |  0.1.2  |   --    |  2.4.7 |
 | ghcr.io/inti-cmnb/kicad5_auto:1.6.3       | 1.6.3  | 5.1.9 |  11.6  | 2.2.8  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 |
-| ghcr.io/inti-cmnb/kicad5_auto:1.6.4       | 1.6.4  | 5.1.9 |  11.6  | 2.2.8  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 |
+| ghcr.io/inti-cmnb/kicad5_auto:1.6.4       | 1.6.4  | 5.1.9 |  11.6  | 2.3.0  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 |
 
 ## KiCad 6
 
@@ -56,7 +57,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad6_auto:1.6.1       | 1.6.1  | 6.0.11 |  11.6  | 2.2.1  | 1.8.0-3 | 2.5.0-3  | 1.1.15 |  0.1.2  |   --    |  2.4.5 | 1.3.0-5 |
 | ghcr.io/inti-cmnb/kicad6_auto:1.6.2       | 1.6.2  | 6.0.11 |  11.6  | 2.2.6  | 1.9.0   | 2.6.0    | 1.1.17 |  0.1.2  |   --    |  2.4.7 | 1.3.0-7 |
 | ghcr.io/inti-cmnb/kicad6_auto:1.6.3       | 1.6.3  | 6.0.11 |  12.1  | 2.2.8  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 | 1.4.0   |
-| ghcr.io/inti-cmnb/kicad6_auto:1.6.4       | 1.6.4  | 6.0.11 |  12.1  | 2.2.8  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 | 1.4.0-2 |
+| ghcr.io/inti-cmnb/kicad6_auto:1.6.4       | 1.6.4  | 6.0.11 |  12.1  | 2.3.0  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 | 1.5.1   |
 
 ## KiCad 7
 
@@ -65,7 +66,13 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.1       | 1.6.1  | 7.0.1.1 |  11.6  | 2.2.1  | 1.8.0-3 | 2.5.0-3  | 1.1.15 |  0.1.2  |  2.4.5 | 1.3.0-5 |
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.2       | 1.6.2  | 7.0.5.1 |  11.6  | 2.2.6  | 1.9.0   | 2.6.0    | 1.1.17 |  0.1.2  |  2.4.7 | 1.3.0-7 |
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.3       | 1.6.3  | 7.0.10  |  12.1  | 2.2.8  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |  2.5.3 | 1.4.0   |
-| ghcr.io/inti-cmnb/kicad7_auto:1.6.4       | 1.6.4  | 7.0.11  |  12.1  | 2.2.8  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.2  |  2.5.3 | 1.5.0   |
+| ghcr.io/inti-cmnb/kicad7_auto:1.6.4       | 1.6.4  | 7.0.11  |  12.1  | 2.3.0  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.2  |  2.5.3 | 1.5.1   |
+
+## KiCad 8
+
+| Name                                      | KiBot  | KiCad   | Debian | KiAuto | KiBoM   | iBoM     | KiCost | DK plug | KiDiff | KiKit   |
+| :---------------------------------------- | ------ | ------- | ------ | ------ | ------- | -------- | ------ | ------- | ------ | ------: |
+| ghcr.io/inti-cmnb/kicad8_auto:1.6.4       | 1.6.4  | 8.0.1   |  sid   | 2.3.0  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.2  |  2.5.3 | 1.5.1   |
 
 You can run it using a script like this:
 
@@ -84,7 +91,5 @@ docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
     --volume="/home/$USER/.cache/kicad:/home/$USER/.cache/kicad:rw" \
     --volume="/etc/passwd:/etc/passwd:ro" \
     --volume="/etc/shadow:/etc/shadow:ro" \
-    ghcr.io/inti-cmnb/kicad7_auto:1.6.1 /bin/bash -c "cd workdir/$SUBDIR; kibot"
+    ghcr.io/inti-cmnb/kicad7_auto:1.6.4 /bin/bash -c "cd workdir/$SUBDIR; kibot"
 ```
-
-
