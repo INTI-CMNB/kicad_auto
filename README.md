@@ -46,6 +46,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad5_auto:1.6.4       | 1.6.4  | 5.1.9 |  11.6  | 2.3.0  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 |
 | ghcr.io/inti-cmnb/kicad5_auto:1.6.5       | 1.6.5  | 5.1.9 |  11.6  | 2.3.1  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.3  |   --    |  2.5.3 |
 | ghcr.io/inti-cmnb/kicad5_auto:1.7.0       | 1.7.0  | 5.1.9 |  11.6  | 2.3.2  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |   --    |  2.5.4 |
+| ghcr.io/inti-cmnb/kicad5_auto:1.8.1       | 1.8.1  | 5.1.9 |  11.6  | 2.3.2  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |   --    |  2.5.5 |
 
 ## KiCad 6
 
@@ -62,6 +63,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad6_auto:1.6.4       | 1.6.4  | 6.0.11 |  12.1  | 2.3.0  | 1.9.1   | 2.8.1    | 1.1.18 |  0.1.2  |   --    |  2.5.3 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad6_auto:1.6.5       | 1.6.5  | 6.0.11 |  12.1  | 2.3.1  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.3  |   --    |  2.5.3 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad6_auto:1.7.0       | 1.7.0  | 6.0.11 |  12.1  | 2.3.2  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |   --    |  2.5.4 | 1.5.1   |
+| ghcr.io/inti-cmnb/kicad6_auto:1.8.1       | 1.8.1  | 6.0.11 |  12.1  | 2.3.3  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |   --    |  2.5.5 | 1.5.1   |
 
 ## KiCad 7
 
@@ -73,6 +75,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.4       | 1.6.4  | 7.0.11  |  12.1  | 2.3.0  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.2  |  2.5.3 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad7_auto:1.6.5       | 1.6.5  | 7.0.11  |  12.1  | 2.3.1  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.3  |  2.5.3 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad7_auto:1.7.0       | 1.7.0  | 7.0.11  |  12.1  | 2.3.2  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |  2.5.5 | 1.6.0   |
+| ghcr.io/inti-cmnb/kicad7_auto:1.8.1       | 1.8.1  | 7.0.11  |  12.1  | 2.3.3  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |  2.5.5 | 1.6.0-3 |
 
 ## KiCad 8
 
@@ -81,6 +84,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad8_auto:1.6.4       | 1.6.4  | 8.0.1   |  sid   | 2.3.0  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.2  |  2.5.3 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad8_auto:1.6.5       | 1.6.5  | 8.0.1   |  sid   | 2.3.1  | 1.9.1   | 2.9.0    | 1.1.18 |  0.1.3  |  2.5.3 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad8_auto:1.7.0       | 1.7.0  | 8.0.4   |  12.1  | 2.3.2  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |  2.5.5 | 1.6.0   |
+| ghcr.io/inti-cmnb/kicad8_auto:1.8.1       | 1.8.1  | 8.0.5   |  12.1  | 2.3.3  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3  |  2.5.5 | 1.6.0-3 |
 
 You can run it using a script like this:
 
