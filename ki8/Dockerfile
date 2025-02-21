@@ -20,6 +20,9 @@ RUN     apt-get update  && \
 	rm /*.deb && \
 	rm -rf /var/lib/apt/lists/* /var/cache/debconf/templates.dat-old /var/lib/dpkg/status-old
 
+# Temporal fix for 1.8.2
+COPY frame_plotter /usr/share/kibot/tools/
+
 ARG iteration
 ENV KIBOT_ITERATION=$iteration
 

@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+cp ../frame_plotter .
 . ../iteration.sh
 docker build -f Dockerfile --build-arg iteration=${IT} -t ghcr.io/inti-cmnb/kicad8_auto:latest .
 TG1=`docker run --rm ghcr.io/inti-cmnb/kicad8_auto:latest kibot --version | sed 's/.* \([0-9]\+\.[0-9]\+\.[0-9]\+\(\.[0-9]\+\)\?\) .*/\1/' | tr -d '\n'`

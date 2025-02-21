@@ -1,0 +1,48 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2024 Salvador E. Tropea
+# Copyright (c) 2024 Instituto Nacional de Tecnología Industrial
+# License: AGPL-3.0
+# Project: KiBot (formerly KiPlot)
+# Description: Prints the F.Cu and the PCB frame to an SVG file
+# Arguments: PCB_file Red Green Blue
+# Note: uses the Python API because kicad-cli fails to show colors
+#       https://gitlab.com/kicad/code/kicad/-/issues/18928
+import json
+import os
+import pcbnew
+import sys
+import tempfile
+
+# Load the PCB
+board = pcbnew.LoadBoard(sys.argv[1])
+r = int(float(sys.argv[2])*255)
+g = int(float(sys.argv[3])*255)
+b = int(float(sys.argv[4])*255)
+# Create a plot controller
+pc = pcbnew.PLOT_CONTROLLER(board)
+
+# Create a color scheme with a different worksheet color and load it
+# Yes, ridiculous, but the COLOR_SETTINGS class isn't exported
+sm = pcbnew.GetSettingsManager()
+path = os.path.join(pcbnew.SETTINGS_MANAGER.GetUserSettingsPath(), 'colors')
+os.makedirs(path, exist_ok=True)
+with tempfile.NamedTemporaryFile(mode='wt', delete=False, suffix='.json', prefix='kibo_color_', dir=path) as f:
+    f.write(json.dumps({"board": {"worksheet": f"rgb({r}, {g}, {b})"}}))
+new_cs = sm.AddNewColorSettings(os.path.basename(f.name))
+os.remove(f.name)
+
+# Get the plot options
+po = pc.GetPlotOptions()
+# Frame with colors, using the color we selected
+po.SetPlotFrameRef(True)
+po.SetColorSettings(new_cs)
+po.SetBlackAndWhite(False)
+
+# Create the SVG
+pc.SetLayer(board.GetLayerID('F.Cu'))
+assert pc.OpenPlotfile('frame', pcbnew.PLOT_FORMAT_SVG, 'simple')
+pc.SetColorMode(True)
+pc.PlotLayer()
+print(pc.GetPlotFileName())
+pc.ClosePlot()
