@@ -14,3 +14,8 @@ RUN     apt-get update  && \
 	apt-get -y autoremove && \
 	rm /*.deb && \
 	rm -rf /var/lib/apt/lists/* /var/cache/debconf/templates.dat-old /var/lib/dpkg/status-old
+
+# 9.0.1 changed the names of various constants related to units
+RUN     printf "DXF_UNITS_MILLIMETERS = DXF_UNITS_MM\n" >> /usr/lib/python3/dist-packages/pcbnew.py && \
+	printf "DXF_UNITS_INCHES = DXF_UNITS_INCH\n" >> /usr/lib/python3/dist-packages/pcbnew.py
+
