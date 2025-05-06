@@ -15,16 +15,16 @@ RUN     apt-get update  && \
 	dl_deb.py INTI-CMNB/KiAuto && \
 	dl_deb.py INTI-CMNB/kidiff && \
 	dl_deb.py INTI-CMNB/KiBot && \
-	dpkg --ignore-depends kicad -i kicad-git*.deb && \
-	dpkg --ignore-depends kicad -i kibom*.deb && \
-	dpkg --ignore-depends kicad -i interactivehtmlbom*.deb && \
-	dpkg --ignore-depends kicad -i kicost-digi*.deb && \
-	dpkg --ignore-depends kicad -i kicost_*.deb && \
-	dpkg --ignore-depends kicad -i python3-pcbnewtransition*.deb && \
-	dpkg --ignore-depends kicad --ignore-depends kicad-footprints --ignore-depends kicad-symbols --ignore-depends python3-shapely -i python3-pymeta*.deb python3-pybars*.deb kikit*.deb && \
-	dpkg --ignore-depends kicad -i kiauto_*.deb && \
-	dpkg --ignore-depends kicad -i kidiff_*.deb && \
-	dpkg --ignore-depends kicad -i kibot_*.deb && \
+	dpkg -i kicad-git*.deb && \
+	dpkg -i kibom*.deb && \
+	dpkg -i interactivehtmlbom*.deb && \
+	dpkg -i kicost-digi*.deb && \
+	dpkg -i kicost_*.deb && \
+	dpkg -i python3-pcbnewtransition*.deb && \
+	dpkg -i python3-pymeta*.deb python3-pybars*.deb kikit*.deb && \
+	dpkg -i kiauto_*.deb && \
+	dpkg -i kidiff_*.deb && \
+	dpkg -i kibot_*.deb && \
 	rm /*.deb && \
 	rm -rf /var/lib/apt/lists/* /var/cache/debconf/templates.dat-old /var/lib/dpkg/status-old
 
