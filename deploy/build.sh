@@ -25,9 +25,15 @@ docker tag ghcr.io/inti-cmnb/kicad_auto:ki9 ghcr.io/inti-cmnb/kicad9_auto:latest
 docker push setsoft/kicad_auto:ki9
 docker push ghcr.io/inti-cmnb/kicad9_auto:latest
 # KiCad 5
-docker pull ghcr.io/inti-cmnb/kicad_auto:ki5
-docker tag ghcr.io/inti-cmnb/kicad_auto:ki5 setsoft/kicad_auto:latest
-docker tag ghcr.io/inti-cmnb/kicad_auto:ki5 ghcr.io/inti-cmnb/kicad5_auto:latest
-docker push setsoft/kicad_auto:latest
-docker push ghcr.io/inti-cmnb/kicad5_auto:latest
+# docker pull ghcr.io/inti-cmnb/kicad_auto:ki5
+# docker tag ghcr.io/inti-cmnb/kicad_auto:ki5 setsoft/kicad_auto:latest
+# docker tag ghcr.io/inti-cmnb/kicad_auto:ki5 ghcr.io/inti-cmnb/kicad5_auto:latest
+# docker push setsoft/kicad_auto:latest
+# docker push ghcr.io/inti-cmnb/kicad5_auto:latest
+# KiCad 10
+docker pull ghcr.io/inti-cmnb/kicad_auto:ki10
+docker tag ghcr.io/inti-cmnb/kicad_auto:ki10 setsoft/kicad_auto:ki10
+docker tag ghcr.io/inti-cmnb/kicad_auto:ki10 ghcr.io/inti-cmnb/kicad10_auto:latest
+docker push setsoft/kicad_auto:ki10
+docker push ghcr.io/inti-cmnb/kicad10_auto:latest
 
