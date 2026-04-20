@@ -19,7 +19,6 @@ RUN     apt-get update  && \
 	dpkg -i interactivehtmlbom*.deb && \
 	dpkg -i kicost-digi*.deb && \
 	dpkg -i kicost_*.deb && \
-	dpkg -i python3-pcbnewtransition*.deb && \
 	dpkg -i python3-pymeta*.deb python3-pybars*.deb kikit*.deb && \
 	dpkg -i kiauto_*.deb && \
 	dpkg -i kidiff_*.deb && \
