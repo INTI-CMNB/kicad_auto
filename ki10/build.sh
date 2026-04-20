@@ -2,7 +2,7 @@
 set -e
 cp ../frame_plotter .
 . ../iteration.sh
-docker build -f Dockerfile --build-arg iteration=${IT} -t ghcr.io/inti-cmnb/kicad9_auto:latest .
+docker build -f Dockerfile --build-arg iteration=${IT} -t ghcr.io/inti-cmnb/kicad10_auto:latest .
 TG1=`docker run --rm ghcr.io/inti-cmnb/kicad10_auto:latest kibot --version | sed 's/.* \([0-9]\+\.[0-9]\+\.[0-9]\+\(\.[0-9]\+\)\?\) .*/\1/' | tr -d '\n'`
 TG2=k`docker run --rm ghcr.io/inti-cmnb/kicad10_auto:latest kicad_version.py`
 TG3=d`docker run --rm ghcr.io/inti-cmnb/kicad10_auto:latest cat /etc/debian_version | tr -d '\n'`
