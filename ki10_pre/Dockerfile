@@ -15,4 +15,5 @@ RUN     apt-get update && \
 	python3 /usr/bin/patch_cli.py /usr/bin/kicad-cli && \
 	pip uninstall --break-system-packages lief -y && \
 	apt-get -y remove python3-capstone python3-pip && \
+	apt-get -y autoremove && \
 	rm -rf /var/lib/apt/lists/* /var/cache/debconf/templates.dat-old /var/lib/dpkg/status-old
