@@ -8,6 +8,7 @@ RUN     apt-get update  && \
 	dl_deb.py INTI-CMNB/KiBoM && \
 	dl_deb.py INTI-CMNB/kicad-git-filters && \
 	dl_deb.py set-soft/kicost-digikey-api-v3 && \
+	dl_deb.py set-soft/kicost-digikey-api-v4 && \
 	dl_deb.py hildogjr/KiCost && \
 	dl_deb.py INTI-CMNB/InteractiveHtmlBom && \
 	dl_deb.py INTI-CMNB/KiKit --skip kikit-doc && \
