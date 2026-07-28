@@ -29,6 +29,12 @@ The relation between the packages that contains the images is as depicted in the
 
 Here are some of the available images:
 
+## KiCad 10
+
+| Name                                      | KiBot  | KiCad   | Debian | KiAuto | KiBoM   | iBoM     | KiCost | DK plug  | KiDiff | KiKit   |
+| :---------------------------------------- | ------ | ------- | ------ | ------ | ------- | -------- | ------ | -------- | ------ | ------: |
+| ghcr.io/inti-cmnb/kicad9_auto:1.9.0       | 1.9.0  | 10.0.4  |  13.2  | 2.3.10 | 1.9.1   | 2.11.2   | 1.1.21 |  0.1.5   |  2.6.0 | 1.8.0   |
+
 ## KiCad 9
 
 | Name                                      | KiBot  | KiCad   | Debian | KiAuto | KiBoM   | iBoM     | KiCost | DK plug  | KiDiff | KiKit   |
@@ -36,6 +42,7 @@ Here are some of the available images:
 | ghcr.io/inti-cmnb/kicad9_auto:1.8.3       | 1.8.3  | 9.0.0   |  12.9  | 2.3.4  | 1.9.1   | 2.9.0    | 1.1.19 |  0.1.3   |  2.5.7 | 1.7.1   |
 | ghcr.io/inti-cmnb/kicad9_auto:1.8.4       | 1.8.4  | 9.0.1   |  12.7  | 2.3.5  | 1.9.1   | 2.10.0   | 1.1.20 |  0.1.3   |  2.5.8 | 1.7.2   |
 | ghcr.io/inti-cmnb/kicad9_auto:1.8.5       | 1.8.5  | 9.0.7   |  13.2  | 2.3.7  | 1.9.1   | 2.11.1   | ------ |  0.1.3   |  2.5.9 | 1.8.0   |
+| ghcr.io/inti-cmnb/kicad9_auto:1.9.0       | 1.9.0  | 9.0.7   |  13.2  | 2.3.10 | 1.9.1   | 2.11.2   | 1.1.21 |  0.1.5   |  2.6.0 | 1.8.0   |
 
 KiCost is not working on 1.8.5 images, use the *full* images for this
 
@@ -51,6 +58,7 @@ KiCost is not working on 1.8.5 images, use the *full* images for this
 | ghcr.io/inti-cmnb/kicad8_auto:1.8.3       | 1.8.3  | 8.0.8   |  12.7  | 2.3.5  | 1.9.1   | 2.9.0    | 1.1.20 |  0.1.3(1)|  2.5.8 | 1.7.2   |
 | ghcr.io/inti-cmnb/kicad8_auto:1.8.4       | 1.8.4  | 8.0.8   |  12.7  | 2.3.5  | 1.9.1   | 2.10.0   | 1.1.20 |  0.1.3(1)|  2.5.8 | 1.7.2   |
 | ghcr.io/inti-cmnb/kicad8_auto:1.8.5       | 1.8.5  | 8.0.8   |  12.7  | 2.3.7  | 1.9.1   | 2.11.1   | 1.1.20 |  0.1.3(1)|  2.5.9 | 1.7.2   |
+| ghcr.io/inti-cmnb/kicad8_auto:1.9.0       | 1.9.0  | 8.0.8   |  12.7  | 2.3.10 | 1.9.1   | 2.11.2   | 1.1.21 |  0.1.5(1)|  2.6.0 | 1.7.2   |
 
 ## KiCad 7
 
@@ -67,6 +75,7 @@ KiCost is not working on 1.8.5 images, use the *full* images for this
 | ghcr.io/inti-cmnb/kicad7_auto:1.8.3       | 1.8.3  | 7.0.11  |  12.1  | 2.3.4  | 1.9.1   | 2.9.0    | 1.1.20 |  0.1.3(1)|  2.5.8 | 1.7.2   |
 | ghcr.io/inti-cmnb/kicad7_auto:1.8.4       | 1.8.4  | 7.0.11  |  12.1  | 2.3.5  | 1.9.1   | 2.10.0   | 1.1.20 |  0.1.3(1)|  2.5.8 | 1.7.2   |
 | ghcr.io/inti-cmnb/kicad7_auto:1.8.5       | 1.8.5  | 7.0.11  |  12.1  | 2.3.7  | 1.9.1   | 2.11.1   | 1.1.20 |  0.1.3(1)|  2.5.9 | 1.7.2   |
+| ghcr.io/inti-cmnb/kicad7_auto:1.9.0       | 1.9.0  | 7.0.11  |  12.1  | 2.3.10 | 1.9.1   | 2.11.2   | 1.1.21 |  0.1.5(1)|  2.6.0 | 1.7.2   |
 
 ## KiCad 6
 
@@ -88,6 +97,7 @@ KiCost is not working on 1.8.5 images, use the *full* images for this
 | ghcr.io/inti-cmnb/kicad6_auto:1.8.3       | 1.8.3  | 6.0.11 |  12.1  | 2.3.5  | 1.9.1   | 2.9.0    | 1.1.20 |  0.1.3(1)|   --    |  2.5.8 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad6_auto:1.8.4       | 1.8.4  | 6.0.11 |  12.1  | 2.3.5  | 1.9.1   | 2.10.0   | 1.1.20 |  0.1.3(1)|   --    |  2.5.8 | 1.5.1   |
 | ghcr.io/inti-cmnb/kicad6_auto:1.8.5       | 1.8.5  | 6.0.11 |  12.1  | 2.3.7  | 1.9.1   | 2.11.1   | 1.1.20 |  0.1.3(1)|   --    |  2.5.9 | 1.5.1   |
+| ghcr.io/inti-cmnb/kicad6_auto:1.9.0       | 1.9.0  | 6.0.11 |  12.1  | 2.3.10 | 1.9.1   | 2.11.2   | 1.1.21 |  0.1.5(1)|   --    |  2.6.0 | 1.5.1   |
 
 ## KiCad 5
 
