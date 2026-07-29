@@ -33,7 +33,7 @@ Here are some of the available images:
 
 | Name                                      | KiBot  | KiCad   | Debian | KiAuto | KiBoM   | iBoM     | KiCost | DK plug  | KiDiff | KiKit   |
 | :---------------------------------------- | ------ | ------- | ------ | ------ | ------- | -------- | ------ | -------- | ------ | ------: |
-| ghcr.io/inti-cmnb/kicad9_auto:1.9.0       | 1.9.0  | 10.0.4  |  13.2  | 2.3.10 | 1.9.1   | 2.11.2   | 1.1.21 |  0.1.5   |  2.6.0 | 1.8.0   |
+| ghcr.io/inti-cmnb/kicad10_auto:1.9.0      | 1.9.0  | 10.0.4  |  13.2  | 2.3.10 | 1.9.1   | 2.11.2   | 1.1.21 |  0.1.5   |  2.6.0 | 1.8.0   |
 
 ## KiCad 9
 
